@@ -1,0 +1,269 @@
+/* Note that while odd and even are DisplayTag CSS class names, dataTable is a name of my own choosing. */
+/*
+#000066 = bleu fonce
+#c8c8ff = 
+
+*/
+
+@import url("displaytag.css");
+
+@import url("mainstylesheet.css");
+
+
+.dataTable {
+	background-color: white;
+	border: 1px solid #000066;
+	font-size :	12px;
+	margin:	5px;
+	width:100%;
+}
+
+.dataTable th {
+	border-right: 1px solid #c8c8ff;
+	padding-left: 2px;
+	padding-right:12px;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	color: black;
+	background-color: lavender;
+	margin-right: 10px;
+	white-space: nowrap;
+}
+
+
+.dataTable  td {
+	font-family: verdana, arial, helvetica, sans-serif;
+	padding-left: 2px;
+}
+
+.dataTable tr.total td {
+	white-space: nowrap;
+	vertical-align: top;
+	font-weight: bold;
+	border-top: 1px solid black;
+	padding-bottom: 10px;
+}
+
+
+.dataTable td.hidden {
+	display: none;
+}
+
+.dataTable th.hidden {
+	display: none;
+}
+
+/*
+.dataTable th.r {
+	text-align: right;
+	padding-right: 10px;
+}
+
+.dataTable th.c {
+	text-align: center;
+}
+
+.dataTable td.r {
+	text-align: right;
+	padding-right: 10px;
+}
+
+.dataTable td.c {
+	text-align: center;
+}
+*/
+
+.dataTable  tr.odd {
+	background-color: whitesmoke;
+}
+
+.dataTable tr.even {
+	background-color: honeydew;
+}
+
+
+/*
+.dataTable th a   ,.dataTable th a:visited {
+	text-align: left;
+	color: black;
+}
+
+.dataTable th a:hover {
+	color: #ffcc00;
+	background-color: transparent;
+}
+
+.dataTable th a:link {
+	border-right: 1px solid #c8c8ff;
+	padding-left: 2px;
+	padding-right:12px;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	color: black;
+	background-color: lavender;
+	margin-right: 10px;
+	white-space: nowrap;
+}
+*/
+
+
+
+.dataTable .order1 {
+	background-position: right;
+	background-image: url(../images/arrow_up.gif);
+	background-repeat: no-repeat;
+}
+
+.dataTable .order2 {
+	background-position: right;
+	background-image: url(../images/arrow_down.gif);
+	background-repeat: no-repeat;
+}
+
+.pagelinks {
+	color: #999999;
+	margin: 5px;
+}
+
+.pagelinks img {
+	vertical-align: middle;
+}
+
+
+/* Partie se trouvant au dessus du tableau et contenant "[First/Prev] 1, 2, 3, 4, 5 [Next/Last]" */
+
+span.pagelinks {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	width: 100%;
+	display: block;
+	border-top: none;
+	margin-bottom: -5px;
+}
+
+
+/* Partie se trouvant en bas du tableau et contenant "Export options" */
+
+div.exportlinks {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	margin: 2px 0 10px 0;
+	width: 100%;
+}
+
+
+
+/* Partie se trouvant au dessus du tableau et contenant "26 produits found in the DB. Displaying 1 to 6..." */
+
+span.pagebanner {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	width: 100%;
+	margin-top: 10px;
+	display: block;
+	border-bottom: none;
+}
+
+
+span.export {
+	padding: 0 4px 1px 20px;
+	font-size: x-small;
+	text-align: center;
+	cursor: pointer;	
+}
+
+
+span.excel {
+	background-image: url(../images/ico_file_excel.png);
+	background-repeat: no-repeat;
+	width: 16px;
+}
+
+span.csv {
+	background-image: url(../images/ico_file_csv.png);
+	background-repeat: no-repeat;
+	width: 16px;
+}
+
+span.xml {
+	background-image: url(../images/ico_file_xml.png);
+	background-repeat: no-repeat;
+	width: 16px;
+}
+
+span.pdf {
+	background-image: url(../images/ico_file_pdf.png);
+	background-repeat: no-repeat;
+	width: 16px;
+}
+
+
+span.rtf {
+	background-image: url(../images/ico_file_rtf.png);
+	background-repeat: no-repeat;
+	width: 16px;
+}
+
+.dataTable tr.rowMouseOver {
+	background-image: url(../images/selected.gif);
+	background-repeat: repeat-x;
+	background-color: #ffff99;
+}
+
+
+.pageHeader {
+	height: 60px;
+	background-image: url(../images/test/header.gif);
+	background-repeat: repeat-x;
+}
+
+.pageHeaderText {
+	font-size: 30px;
+	margin-left: 5px;
+	color: whitesmoke;
+	font-family: "century gothic", verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	display:inline;
+	white-space: nowrap;
+}
+
+.leftMenu {
+	white-space: nowrap;
+	height: 100%;
+	background-color: #d6cfe6;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+.content {
+	width: 100%;
+	padding: 10px;
+}
+
+.rightColumn {
+	width: 3px;
+}
+
+
+
+.logo {
+	border-top: 1px solid #000066;
+	border-left: 1px solid #000066;
+	border-bottom: 1px solid #000066;
+	display:inline;
+	text-align: right;
+}
+
+.code {
+	font-family: verdana, arial, helvetica, "courier new", monospace;
+	font-size: 12px;
+}
+
+.borderedInline {
+	display: inline;
+	border: 1px solid black;
+}
+

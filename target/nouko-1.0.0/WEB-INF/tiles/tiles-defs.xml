@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+			"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+			"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+				
+<tiles-definitions>
+
+		
+<!-- =================================================================================================================================== -->
+<!--   Master layout and default tiles used by all pages  NEW                                												 -->
+<!-- =================================================================================================================================== -->
+	
+	<definition name=".mainLayout.definition" template="/WEB-INF/layout/mainLayout.jsp">
+		<put-attribute name="title"  value="Home Page Title"/>
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+		<put-attribute name="menu"   value="/WEB-INF/layout/menu.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+		<put-attribute name="body"   value="/WEB-INF/layout/body.jsp" />
+	</definition>
+	
+	
+<!-- =================================================================================================================================== -->
+<!--   Tiles Definition for .main.page (N.B.  On utilise mainPage.jsp en remplacement de .main.page)                  																		     -->
+<!-- =================================================================================================================================== -->
+
+	<definition name=".main.page" extends=".mainLayout.definition">
+		<put-attribute name="title" value="Main Page: Catalog Page Of The Application"/>
+		<put-attribute name="menu"  value="/WEB-INF/jsp/mainMenu.jsp" />
+		<put-attribute name="body"  value="/WEB-INF/jsp/mainPage.jsp" />
+	</definition>
+
+
+<!-- =================================================================================================================================== -->
+<!--   Tiles Definition for .customer.page                  																		     -->
+<!-- =================================================================================================================================== -->
+
+	<definition name=".customer.page" extends=".mainLayout.definition">
+		<put-attribute name="title" value="Customer Page"/>
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+		<put-attribute name="menu"  value="/WEB-INF/jsp/mainMenu.jsp" />
+		<put-attribute name="body"  value="/WEB-INF/jsp/mainPage.jsp" />
+	</definition>
+
+
+<!-- =================================================================================================================================== -->
+<!--   Tiles Definition for .admin.page                  																		     -->
+<!-- =================================================================================================================================== -->
+
+	<definition name=".admin.page" extends=".mainLayout.definition">
+		<put-attribute name="title" value="Admin Page: Main Page Of The Administration"/>
+		<put-attribute name="header" value="/WEB-INF/layout/adminHeader.jsp" />
+		<put-attribute name="menu"  value="/WEB-INF/jsp/adminMenu.jsp" />
+		<put-attribute name="body"  value="/WEB-INF/jsp/adminPage.jsp" />
+	</definition>
+
+		
+<!-- =================================================================================================================================== -->
+<!--   Tiles Definition for .page.add.imagetoproduct                  																		     -->
+<!-- =================================================================================================================================== -->
+
+	<definition name=".page.add.imagetoproduct" extends=".admin.page">
+		<put-attribute name="title" value="Add Image to Product"/>
+		<put-attribute name="menu"  value="/WEB-INF/jsp/adminMenu.jsp" />
+		<put-attribute name="body"  value="/WEB-INF/jsp/addImageToProduct.jsp" />
+	</definition>
+
+
+<!-- =================================================================================================================================== -->
+<!--   Tiles Definition for .page.list.categories                  																		     -->
+<!-- =================================================================================================================================== -->
+
+	<definition name=".page.list.categories" extends=".admin.page">
+		<put-attribute name="title" value="Categories List"/>
+		<put-attribute name="menu"  value="/WEB-INF/jsp/adminMenu.jsp" />
+		<put-attribute name="body"  value="/WEB-INF/jsp/categoryList.jsp" />
+	</definition>
+	
+
+<!-- =================================================================================================================================== -->
+<!--   Tiles Definition for .page.list.products                  																		     -->
+<!-- =================================================================================================================================== -->
+
+	<definition name=".page.list.products" extends=".admin.page">
+		<put-attribute name="title" value="Products List"/>
+		<put-attribute name="menu"  value="/WEB-INF/jsp/adminMenu.jsp" />
+		<put-attribute name="body"  value="/WEB-INF/jsp/productList.jsp" />
+	</definition>
+
+	
+<!-- =================================================================================================================================== -->
+<!--   Tiles Definition for .page.create.product                  																		     -->
+<!-- =================================================================================================================================== -->
+
+	<definition name=".page.create.product" extends=".admin.page">
+		<put-attribute name="title" value="Create Product"/>
+		<put-attribute name="menu"  value="/WEB-INF/jsp/adminMenu.jsp" />
+		<put-attribute name="body"  value="/WEB-INF/jsp/createProduct.jsp" />
+	</definition>
+
+	
+<!-- =================================================================================================================================== -->
+<!--   Tiles Definition for .page.display.catalog                  																		     -->
+<!-- =================================================================================================================================== -->
+
+	<definition name=".page.display.catalog" extends=".mainLayout.definition">
+		<put-attribute name="title" value="Catalog Page Of The Application"/>
+		<put-attribute name="menu"  value="/WEB-INF/jsp/mainMenu.jsp" />
+		<put-attribute name="body"  value="/WEB-INF/jsp/catalog.jsp" />
+	</definition>
+
+	
+<!-- =================================================================================================================================== -->
+<!--   Tiles Definition for .page.detail.product                  																		     -->
+<!-- =================================================================================================================================== -->
+
+	<definition name=".page.detail.product" extends=".mainLayout.definition">
+		<put-attribute name="title" value="Display Product"/>
+		<put-attribute name="menu"  value="/WEB-INF/jsp/mainMenu.jsp" />
+		<put-attribute name="body"  value="/WEB-INF/jsp/productDetails.jsp" />
+	</definition>
+	
+	
+<!-- =================================================================================================================================== -->
+<!--   Tiles Definition for .page.display.shoppingcart                  																		     -->
+<!-- =================================================================================================================================== -->
+
+	<definition name=".page.display.shoppingcart" extends=".mainLayout.definition">
+		<put-attribute name="title" value="Displaying Shopping Cart"/>
+		<put-attribute name="menu"  value="/WEB-INF/jsp/mainMenu.jsp" />
+		<put-attribute name="body"  value="/WEB-INF/jsp/shoppingCart.jsp" />
+	</definition>
+							
+	
+<!-- =================================================================================================================================== -->
+<!--   Tiles Definition for .page.update.shoppingcart                  																		     -->
+<!-- =================================================================================================================================== -->
+
+	<definition name=".page.update.shoppingcart" extends=".mainLayout.definition">
+		<put-attribute name="title" value="Updating Shopping Cart"/>
+		<put-attribute name="menu"  value="/WEB-INF/jsp/mainMenu.jsp" />
+		<put-attribute name="body"  value="/WEB-INF/jsp/shoppingCartUpdate.jsp" />
+	</definition>
+	
+	
+</tiles-definitions>

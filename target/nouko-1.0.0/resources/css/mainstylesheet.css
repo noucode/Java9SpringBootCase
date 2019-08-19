@@ -1,0 +1,143 @@
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width: 70%;
+	height: 60%;
+	margin: auto;
+}
+
+
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+#main h2 {
+    font-family: Georgia, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #996600;
+    font-size: 30px;
+}
+
+div.container > h3, div.list > h3 {
+    font-family: Georgia, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #996600;
+    font-size: 24px;
+}
+
+
+.EvenRow 	{
+				color:black;             
+				text-align:center;
+				background:#FFFFF0;			
+				border-width:0;
+				border-color:green;
+			}
+
+.OddRow 	{
+				color:black;             
+				text-align:center;
+				background:#F8F8FF;
+				border-width:0;
+				border-color:green;  
+			}
+
+
+
+div.adminHeaderText > h2, h2#mainPage {
+    		color: white;
+    		text-shadow: 2px 2px 4px #000000;
+	}
+
+div.adminHeaderText > h1 {
+    color: white;
+     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+
+div#well {
+   	    background-color: beige;
+   	    box-shadow: 10px 10px 5px #888888;
+}
+
+
+
+
+
+
+
+
+/*
+
+.titrePage {
+	width: 100%;
+	height: 20px;
+	padding-left: 6px;
+	padding-top: 5px;
+	background-image : url(../images/bg_titre.png);
+	border: 1px solid color: #99DEFD;
+	background-repeat: repeat-x;
+	font-weight: bold;
+	color: #000;
+}
+
+
+
+.searchbox {
+	padding-left:2px;
+	background-color: #EAF1F9;
+	width: 15em;
+	background-image: url(../images/search_input.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	font-style: oblique;
+	color: graytext;
+}
+
+
+.even {  background-color:#EFFBEF; }
+
+.odd {  background-color:white; }
+
+.opened {
+	background: url("../images/collapsed.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: hand;
+}
+
+.closed {
+	background: url("../images/expand.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: hand;
+}
+
+			
+.closedDiv{
+	display:none;
+}
+
+.openedDiv{
+	display:block;
+}
+
+.cachediv {  visibility:hidden;
+             overflow:hidden;
+             height:1px;
+             margin-top:-1px;
+             position:absolute;
+		  }
+
+.showHideDiv {
+	height: 9px;
+	width: 9px;
+	margin-right: 4px;
+}
+
+*/
+

@@ -1,0 +1,63 @@
+
+div#complex3D figure { 
+	margin: 20px; transition: 1s all linear;
+    transform-style: preserve-3d; box-shadow: 0px 0px 16px rgba(0,0,0,0.3); float: left; 
+}
+div#complex3D figure { 
+	width: 320px; height: 284px; box-sizing: border-box;
+}
+div#complex3D figure img { 
+	width: 320px; height: 230px; box-sizing: border-box;
+}
+div#complex3D figcaption { 
+	width: 320px; height: 54px; box-sizing: border-box;
+}
+div#complex3D figure img, div#complex3D figcaption { 
+	position: relative;
+}
+div#complex3D figcaption { 
+	background-color: transparent; text-align: center; padding-top: 6rem;
+    transform: rotateY(0deg) translateZ(1px); opacity: 0.9;
+}
+div#complex3D figure:hover { 
+	transform: rotateY(0deg);
+}
+
+
+div#complex3D figcaption span {
+	display: block;
+}
+
+div#complex3D figcaption div {
+	display: none;
+}
+
+
+
+
+@keyframes spin { 
+	100% { transform: rotateY(360deg); }
+}
+div#circ3D figure:hover { animation: spin 12s linear infinite; }
+
+div#circ3D { perspective: 1000px; margin-top: 400px; width: 1400px; }
+div#circ3D figure { transform-style: preserve-3d; height: 244px; transform-origin-x: 660px; }
+div#circ3D img { width: 320px; height: 244px; position: absolute; left: 500px; }
+div#circ3D img { box-shadow: 0px 0px 0px 48px rgba(0,0,0,0.8); }
+div#circ3D figure, div#circ3D img { transform-origin-z: -500px; }
+
+div#circ3D img:nth-child(1) { transform: rotateY(0deg); }
+div#circ3D img:nth-child(2) { transform: rotateY(-45deg); }
+div#circ3D img:nth-child(3) { transform: rotateY(-90deg); }
+div#circ3D img:nth-child(4) { transform: rotateY(-135deg); }
+div#circ3D img:nth-child(5) { transform: rotateY(-180deg); }
+div#circ3D img:nth-child(6) { transform: rotateY(-225deg); }
+div#circ3D img:nth-child(7) { transform: rotateY(-270deg); }
+div#circ3D img:nth-child(8) { transform: rotateY(-315deg); }
+
+
+
+
+
+
+
