@@ -18,3 +18,4 @@ Running the Project
 
 3. Navigate to the following URL:
 	http://localhost:8080/index.jsp
+
