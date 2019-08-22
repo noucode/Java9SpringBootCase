@@ -16,6 +16,8 @@ Running the Project
 2. From the root directory (Java9SpringBootCase) run the following command:
 	$ java -jar target/nouko-1.0.0.war
 
-3. Navigate to the following URL:
+3. Stop any process that is running on port 8080
+
+4. Navigate to the following URL:
 	http://localhost:8080/index.jsp
 
