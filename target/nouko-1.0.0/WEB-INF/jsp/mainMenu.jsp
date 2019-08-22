@@ -13,8 +13,11 @@
 	<c:url var="departmentSelectionUrl" value="/departmentSelection/selectDepartments"/>
 	<c:url var="categorySelectionUrl" value="/categorySelection/selectCategories"/>
      
+ 	    	<br/>
     <div class="row">
-		<div class="col-md-12">			
+		<div class="col-md-12">		
+	    	<br/>
+			
   		    <div class="panel panel-default">
 	    		<div class="panel-heading">
 				    <b>Catalog Options</b>
@@ -26,14 +29,14 @@
 						    							    		    	        		    								        		
 		        		<div class="form-group form-group-md">
 		       				<label for="idDepartment"> List Catalog By Category:</label>
-							<select name='idCategory' id='idCategory' class="form-control input-sm"  onchange='remplirChamps(this)'>
+							<select name='idCategory' id='idCategory' class="form-control input-sm"  onchange='remplirChamps(this); clickButtonSelection();'>
 								<option value='-1'>None</option>
 							</select>
 		        		</div>
 		        					        					        			    
-		           		<button type="submit" class="btn btn-success btn-xs btn-block active"  formaction="${selectCatalogUrl}" >Display Selection</button>
 		           		<div style="text-align:center;">OR</div>
-		           		<button type="submit" class="btn btn-default btn-xs btn-block active"  formaction="${displayCatalogUrl}" >Display All Catalog</button>
+		           		<button type="submit" class="btn btn-success btn-xs btn-block active"  style="display: none;"  formaction="${selectCatalogUrl}" id="btnS" >Display Selection</button>
+		           		<button type="submit" class="btn btn-success btn-xs btn-block active"  formaction="${displayCatalogUrl}" >Display All Catalog</button>
 								    
 						<!--  categId and are populated by the JavaScript function remplirChamps()  -->		
 						<input type="hidden" name="categId" id="categId" /> 
@@ -58,7 +61,7 @@
 			    	<span class="text-muted"><c:out value="Subtotal: $ ${cartSubtotal} "/></span>  <br/>
 			    									  	
 					<c:url var="urlShoppingCart"  value="/displayShoppingCart/displayCart" ></c:url>
-			        <a href="${urlShoppingCart}"  role="button"  class="btn btn-primary btn-xs btn-block active" >View Cart </a>										
+			        <a href="${urlShoppingCart}"  role="button"  class="btn btn-primary btn-xs btn-block active" >View Shopping Cart </a>										
 					
 				</div>
 				
@@ -182,6 +185,14 @@
 			myCategId.value = categIdChosen ;
 			myCategname.value = categnameChosen ;
 		}
+		
+		
+		//  ====================================================================================	
+		function clickButtonSelection()
+		{
+			document.getElementById('btnS').click() ;
+		}
+		
 
 	</script>
    

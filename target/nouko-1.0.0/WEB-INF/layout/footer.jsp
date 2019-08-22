@@ -14,7 +14,7 @@
 	
 		<footer id="foot01" class="footer clearfix">
 
-			<p><span class="text-muted">Copyright &copy; 2015, JCN noucode Inc. nouko2@hotmail.com  phone 514 712 5229.  All rights reserved</span></p>
+			<p style="margin: auto; text-align: center;"><span class="text-muted">Copyright &copy; 2019, JCN noucode Inc. nouko2@hotmail.com  phone 514 712 5229.  All rights reserved</span></p>
 
 		</footer>
 	

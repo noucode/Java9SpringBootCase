@@ -17,7 +17,6 @@ C:\Java9SpringBootCase\src\main\java\com\nouko\service\ProductServiceImpl.java
 C:\Java9SpringBootCase\src\main\java\com\nouko\web\ForwardMainPageController.java
 C:\Java9SpringBootCase\src\main\java\com\nouko\dao\ImageThumbnailJdbcDaoImpl.java
 C:\Java9SpringBootCase\src\main\java\com\nouko\domain\ShoppingCart.java
-C:\Java9SpringBootCase\src\main\java\com\nouko\web\HomeControllerDELETE.java
 C:\Java9SpringBootCase\src\main\java\com\nouko\service\CategoryService.java
 C:\Java9SpringBootCase\src\main\java\com\nouko\web\AddToCartController.java
 C:\Java9SpringBootCase\src\main\java\com\nouko\web\DisplayCartController.java
