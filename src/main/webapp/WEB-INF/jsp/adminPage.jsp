@@ -12,8 +12,7 @@
 	<br/>
 	<div class="jumbotron text-center">
 		<h1  style="color:black;text-shadow: 3px 3px 6px #000000;">Welcome to the Admin Page !!!</h1>	 	
-	  	<p>(The Place for CRUD Operations)</p> 
-	  	<h2>Choose from the Menu.</h2> 
+	  	<h2>(Choose from the Menu)</h2> 
 	  
 	</div>
 	
