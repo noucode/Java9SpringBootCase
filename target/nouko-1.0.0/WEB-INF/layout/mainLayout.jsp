@@ -51,9 +51,6 @@
 		<spring:url value="/resources/javascript/mainPage.js"  var="mainPageJs" />
 		<script src="${mainPageJs}"></script>
 
-		<spring:url value="/resources/javascript/prototype.js"  var="prototypeJs" />
-		<script src="${prototypeJs}"></script>	
-
 		<spring:url value="/resources/javascript/jquery-1.11.1.min.js"  var="jqueryJs" />
 		<script src="${jqueryJs}"></script>
 		
