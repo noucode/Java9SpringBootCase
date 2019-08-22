@@ -42,7 +42,6 @@
 	  	    <form:label path="quantity" class="col-sm-3 control-label">New Quantity:</form:label>
 	    	<div class="col-sm-4">
 	    		<form:input path="quantity"  type="number" pattern="[0-9]{1,6}"  size="10" maxlength="12" class="form-control" placeholder="quantity"   min="0" max="999999" />
-
 	    	</div>
 	    	<form:errors path="quantity" />
 	  	</div>
@@ -52,12 +51,5 @@
 				<input class="btn btn-success active" type="submit" formaction="${updateShoppingCartUrl}"  value="<spring:message code='button.changeqty'/>">
 				<input class="btn btn-warning pull-right" type="submit" value="Cancel"  formaction="${urlShoppingCart}" >
 			</div>								
-		</div>	      	   	    	    	    
-      	      
+		</div>	      	   	    	    	         
    	</form:form>
-   	
-   	
-   	
-   	
-      
-   	

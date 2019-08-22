@@ -13,7 +13,7 @@
 	<c:url var="departmentSelectionUrl" value="/departmentSelection/selectDepartments"/>
 	<c:url var="categorySelectionUrl" value="/categorySelection/selectCategories"/>
      
- 	    	<br/>
+ 	<br/>
     <div class="row">
 		<div class="col-md-12">		
 	    	<br/>
@@ -88,7 +88,6 @@
     </div>
 
 
-	
 	<script type='text/javascript'>
 
 	 	ajaxRequest() ;
@@ -195,9 +194,3 @@
 		
 
 	</script>
-   
-   
-   
-   
-   
-   

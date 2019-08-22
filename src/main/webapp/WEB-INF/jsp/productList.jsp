@@ -38,7 +38,4 @@
 	   	<display:column property="size"  title="Size"/>
 	   	
    	</display:table>
-      
 </div>
-
-

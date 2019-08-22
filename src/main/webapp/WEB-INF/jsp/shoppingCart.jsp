@@ -54,8 +54,6 @@
 	</c:if>
 	     	 
 	<hr/>
-	  
-
 	<c:url var="continueshoppingUrl" value="/continueshopping/executeShopping"/>
 	<form:form modelAttribute="productForm" action="${continueshoppingUrl}" name="shoppingCart" >
 	    <form:hidden path="productId"/>
@@ -64,10 +62,7 @@
 
 		<input type="submit" formaction="${continueshoppingUrl}" name="continueshopping"  class="btn btn-success active"  value="<spring:message code='button.continueshopping'/>" />
     </form:form>
-	
 	<hr/>
 	
-		  
 </div>  
 	 
-

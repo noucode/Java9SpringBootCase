@@ -37,15 +37,5 @@
 	   	</div>   	  	
 	</nav>
 	
-
 	<spring:url value="/resources/javascript/header.js"  var="headerJs" />
 	<script src="${headerJs}"></script>
-
-
-
-
-
-
-
-
-

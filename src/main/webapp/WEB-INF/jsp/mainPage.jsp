@@ -66,6 +66,4 @@
 
 	<spring:url value="/resources/javascript/mainPage.js"  var="mainPageJs" />
 	<script src="${mainPageJs}"></script>
-
-
-
+	

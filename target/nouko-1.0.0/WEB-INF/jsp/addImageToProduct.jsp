@@ -44,37 +44,6 @@
 </div>  
  
 
-<%-- 
-
-<div align="center">    
-
-	<c:url var="addImageToProductAdd" value="/addImageToProduct/add?${_csrf.parameterName}=${_csrf.token}"/>
-	<form:form modelAttribute="fileUploadForm" action="${addImageToProductAdd}" enctype="multipart/form-data" method="POST">
-	    <table>
-	        <tr>
-	            <td><form:label path="productId"><spring:message code="prompt.product.id"/>:</form:label></td>
-	            <td><form:input path="productId" size="10" maxlength="10"/></td>
-            	<td><form:errors path="productId" /></td>	                        
-	        </tr>	        
-	        <tr>
-	            <td><form:label path="formfile"><spring:message code="prompt.product.image"/>:</form:label></td>
-	            <td><input type="file" name="formfile"  size="50" maxlength="100"  accept="image/jpeg,image/png,image/gif"/></td>
-            	<td><form:errors path="formfile" /></td>	                        
-	        </tr>	        	        	        	        
-         	<tr>
-            	<td>&nbsp;</td>   	 
-            	<td>
-       				<input type="submit" value="Add"  formaction="${addImageToProductAdd}"/>
-       				<input type="reset" value="Reset" />
-            	</td>
-         	</tr> 
-	    </table>            
-    </form:form>
-</div>  
-
---%>
-
-
 <script>
 	
 	$(document).ready(function() {
