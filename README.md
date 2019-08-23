@@ -13,10 +13,10 @@ Running the Project
 1. Clone the project:
 	$ git clone https://github.com/noucode/Java9SpringBootCase.git
 
-2. From the root directory (Java9SpringBootCase) run the following command:
-	$ java -jar target/nouko-1.0.0.war
+2. Stop any process that is running on port 8080
 
-3. Stop any process that is running on port 8080
+3. From the root directory (Java9SpringBootCase) run the following command:
+	$ java -jar target/nouko-1.0.0.war
 
 4. Navigate to the following URL:
 	http://localhost:8080/index.jsp
